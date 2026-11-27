@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1795364920588,
+      "tag": "0000_init_kanban",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1795366072483,
+      "tag": "0001_platform_admin_dynamic_divisions",
+      "breakpoints": true
+    }
+  ]
+}
