@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Locked Color Tokens from image.png */
+    /* #FCECD8 (Warm Cream) -> Clean warm light background */
+    --background: 33 60% 96%;
+    /* #6E3511 (Chestnut Brown) -> Deep rich text */
+    --foreground: 23 73% 22%;
+
+    /* Cards & Containers: Pure White or Warm Tinted Surface */
+    --card: 33 50% 99%;
+    --card-foreground: 23 73% 22%;
+
+    --popover: 33 50% 99%;
+    --popover-foreground: 23 73% 22%;
+
+    /* #597928 (Forest Olive) -> Primary Accent & Action Buttons */
+    --primary: 84 50% 32%;
+    --primary-foreground: 33 86% 96%;
+
+    /* #91AC67 (Sage Olive) -> Secondary & Kanban Badges */
+    --secondary: 84 30% 54%;
+    --secondary-foreground: 23 73% 20%;
+
+    /* Muted states & soft borders */
+    --muted: 33 45% 91%;
+    --muted-foreground: 23 40% 35%;
+
+    /* Light Sage Accent for interactive items */
+    --accent: 84 25% 90%;
+    --accent-foreground: 84 50% 25%;
+
+    --destructive: 0 75% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Warm border from cream-brown spectrum */
+    --border: 33 30% 84%;
+    --input: 33 30% 84%;
+    --ring: 84 50% 32%;
+
+    --radius: 0.625rem;
+  }
+}
+
+body {
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--background));
+  font-family: var(--font-sans), 'Google Sans', 'Plus Jakarta Sans', system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), 'Oswald', sans-serif;
+  letter-spacing: 0.02em;
+}
